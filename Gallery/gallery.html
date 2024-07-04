@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <div class="container2">
+        <ul class="nav3">
+            <li class="box1"><img class="logo" src="images/logo.png"></li>
+            <li class="box2">SPORTIVE WORLD</li>
+            <li></li>
+        </ul>
+    </div>
+    <nav id="navbar">
+        <div class="containerx">
+            <ul class="navhover">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Query</a></li>
+                <li><a href="#">Quiz</a></li>
+                <li><a href="#">Gallery</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Indulge in</button>
+                    <div class="dropdown-content">
+                      <a href="#">Cricket</a>
+                      <a href="../Additional page/Basketball.html">Basketball</a>
+                      <a href="#">Rugby</a>
+                      <a href="#">Tennis</a>
+                    </div>
+                  </div>
+                  
+                <li><a href="">About</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+    <br> <br>
+    
+    <!-- dropdown for background color  -->
+    <div class="selection">
+        <select id="selectcolorid">
+            <option value="" selected disabled hidden> --Select Background Color--</option>
+            <option value="#FF0000">Red</option>
+            <option value="#FFA500">Orange</option>
+            <option value="#A020F0">Purple</option>
+            <option value="#00BFFF">Blue</option>
+            <option value="#000000">Black</option>
+            <option value="">none</option>
+        </select>
+        <!-- created button for switch color -->
+        <button class="glow-on-hover" onclick="changecolor()">Switch The color</button>
+
+        <!-- created button for random button -->
+        <button class="random">  <span> Random </span> </button>
+       
+        
+        
+        <!-- created font size buttons -->
+        <button class="btn1">A-</button>
+        <button class="btn2">A</button>
+        <button class="btn3">A+</button>
+    </div>
+
+    
+    <br> <br> <br> <br>
+    <div class="container" id="main-container">
+        
+        <div class="left-text">
+            <h1 class="heading">Best Teams/Players in 2022</h1>
+            <p class="subheading">Best teams of Cricket,Basketball,Rugby,Football and the best player of Tennis in 2022.</p>
+        </div>
+        <div class="gallery">
+            <div class="box row-2 col-2" style="background-image: url(images/GettyImages-1353263001.webp);" data-description="In 2022, the Australian cricket team showcased their prowess on the international stage with a formidable squad led by a dynamic captain. Their exceptional performances across formats earned them several notable victories and secured a prominent spot in world cricket. Fans were thrilled by the team's dedication, skill, and fighting spirit." onmouseover="delayShowImage(this)">Australian Cricket Team </div>
+            <div class="box col-2 row-2" style="background-image: url(images/Celtics.webp);" data-description="In 2022, the Boston Celtics displayed their commitment to excellence in the NBA. With a talented roster led by their star players, the team consistently competed at a high level in the Eastern Conference. Although they faced some challenges during the season, the Celtics' resilience and strategic gameplay earned them significant victories and a strong fan following. " onmouseover="delayShowImage(this)" >Boston Celtics Basketball Team</div>
+            <div class="box col-2 row-2" style="background-image: url(images/RoryBest_Anthems_EnglandAug2019-1248x832.jpeg);" data-description="n 2022, the Ireland rugby team exhibited their prowess on the international stage. Led by a seasoned captain, they showcased their skill, determination, and tactical acumen in various competitions. Despite encountering some tough challenges, the team's cohesive gameplay and passionate performances garnered them significant victories and the admiration of rugby enthusiasts worldwide." onmouseover="delayShowImage(this)" >Ireland Rugby Team</div>
+            <div class="box row-2 col-2" style="background-image: url(images/ALCARAZPRESSER-e1675879720938-1024x614.jpeg);" data-description="Carlos Alcaraz, commonly known as C. Alcaraz, is a rising Spanish tennis sensation. In 2022, at just 18 years old, he made waves in the ATP Tour with his exceptional skills and determination on the court. With a powerful forehand and strong court presence, Alcaraz showed immense promise and potential for a successful tennis career." onmouseover="delayShowImage(this)">C. Alcaraz(Tennis Player)</div>
+            <div class="box col-2 row-2" style="background-image: url(images/Brazil-FIFA-World-Cup-Qatar-squad-2022.jpeg);" data-description="In 2022, the Brazil football team demonstrated their footballing brilliance with a star-studded lineup. Led by a skillful captain, they showcased their trademark flair and attacking prowess on the pitch. Throughout competitions, their cohesive play and strategic tactics earned them remarkable victories, solidifying their status as a footballing powerhouse admired globally." onmouseover="delayShowImage(this)">Brazil Football Team</div>
+        </div>
+
+    </div>
+    
+    <!-- create image overlay -->
+    <div id="overlay">
+        <div id="full-image-container">
+          <!-- creates  close  button -->
+            <div class="close-button">&#10005;</div>
+            <img id="full-image" alt="full">
+            <p id="full-image-description"></p>
+        </div>
+    </div>
+     <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+
+    <hr> 
+    <footer>
+
+      <div class="footer">
+          <div class="inner-footer">
+  
+  
+              <div class="footer-items">
+                  
+              </div>
+  
+              <div class="footer-items">
+                  <h2 class="head">Quick Links</h2>
+                  <div class="border"></div>
+                  <ul>
+                      <a href="../html/home.html">
+                          <li>Home</li>
+                      </a>
+                      <a href="../html/contactus.html">
+                          <li>Contact Us</li>
+                      </a>
+                      <a href="../html/baboutus.html">
+                          <li>About Us</li>
+                      </a>
+  
+                  </ul>
+              </div>
+  
+              <div class="footer-items">
+                  <h2 class="head">Legal</h2>
+                  <div class="border"></div>
+                  <ul>
+                      <a href="../html/tac.html">
+                          <li>Privacy Policy</li>
+                      </a>
+                      <a href="../html/tac.html">
+                          <li>Terms and Condition</li>
+                      </a>
+                      <a href="../html/tac.html">
+                          <li>Contract</li>
+                      </a>
+                  </ul>
+              </div>
+  
+              <div class="footer-items">
+                  <h2 class="head">Contact US</h2>
+                  <div class="border"></div>
+  
+                  <div class="contact">
+                      
+                         
+                          <span>Sportive World Galle Road Colombo 06</span>
+                          <br>
+              
+                      </div>
+  
+                      <div class="phone">
+                          <img src="images/mobile.png" alt="">
+                          <span>0770555586</span>
+                      </div>
+  
+                      <div class="mail">
+                          <a href="cricketworld@gmail.com">sportiveworld@gmail.com</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="footer-bottom">
+                  <ul>
+                      <div class="social">
+                          <a href="https://www.facebook.com"><img src="images/facebook.png" height="25"
+                                  width="25t"></a>
+                          <a href="https://www.instagram.com"><img src="images/ig.png" height="25" width="25t"></a>
+                          <a href="https://www.youtube.com"><img src="images/yt.png" height="25" width="25t"></a>
+                          <a href="https://accounts.snapchat.com"><img src="images/snap.png" height="25"
+                                  width="25t"></a>
+                          <a href="https://www.whatsapp.com"><img src="images/whatsapp.png" height="25"
+                                  width="25t"></a>
+                      </div>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </footer>
+    
+      <script src="./js/gallery.js"></script>
+    </body>
+</html>
